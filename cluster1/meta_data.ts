@@ -55,8 +55,8 @@ const [metadata_pda, _bump] = PublicKey.findProgramAddressSync(
         {
           createMetadataAccountArgsV3: {
             data: {
-              name: "Something Cool",
-              symbol: "Cool",
+              name: "Something cooking token",
+              symbol: "cooking",
               uri: "https://fnt7ekvmo3hbc5tommi67k6q5a4lz7wk67rtzza7hasnasg2qxqa.arweave.net/K2fyKqx2zhF2bmMR76vQ6Di8_sr34zzkHzgk0EjaheA?ext=png",
               sellerFeeBasisPoints: 100,
               creators: [
