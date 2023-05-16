@@ -23,7 +23,7 @@ const commitment: Commitment = "confirmed";
 const connection = new Connection("https://api.devnet.solana.com", commitment);
 
 // Define our Mint address
-const mint = new PublicKey("5QDLDG6k5iKc8rFH5pB6bsifEQZtwYjoDrojZX3yW1Lq");
+const mint = new PublicKey("EyxG8ew7LyVqweJAMeGy3wwaZPtiKWcyCSRXaiJzmkEe");
 
 // Add the Token Metadata Program
 const token_metadata_program_id = new PublicKey(
@@ -55,10 +55,10 @@ const [metadata_pda, _bump] = PublicKey.findProgramAddressSync(
         {
           createMetadataAccountArgsV3: {
             data: {
-              name: "Something cooking token",
-              symbol: "cooking",
-              uri: "https://fnt7ekvmo3hbc5tommi67k6q5a4lz7wk67rtzza7hasnasg2qxqa.arweave.net/K2fyKqx2zhF2bmMR76vQ6Di8_sr34zzkHzgk0EjaheA?ext=png",
-              sellerFeeBasisPoints: 100,
+              name: "zonak art",
+              symbol: "ZAN",
+              uri: "https://v74boriqcgyk3qy6rhq6olwraphrym4a4ozn2trlbasus4ata6kq.arweave.net/r_gXRRARsK3DHonh5y7RA88cM4Djst1OKwglSXATB5U",
+              sellerFeeBasisPoints: 500,
               creators: [
                 { address: keypair.publicKey, verified: true, share: 100 },
               ],

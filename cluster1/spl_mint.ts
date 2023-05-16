@@ -14,7 +14,7 @@ const keypair = Keypair.fromSecretKey(bs58.decode(wallet));
 const commitment: Commitment = "confirmed";
 const connection = new Connection("https://api.devnet.solana.com", commitment);
 
-const mint = new PublicKey("5QDLDG6k5iKc8rFH5pB6bsifEQZtwYjoDrojZX3yW1Lq");
+const mint = new PublicKey("EyxG8ew7LyVqweJAMeGy3wwaZPtiKWcyCSRXaiJzmkEe");
 
 (async () => {
   try {
