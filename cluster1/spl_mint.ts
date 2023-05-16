@@ -18,7 +18,9 @@ const mint = new PublicKey("5QDLDG6k5iKc8rFH5pB6bsifEQZtwYjoDrojZX3yW1Lq");
 
 (async () => {
   try {
-    //  //Let's mint some. First create an account to hold a balance of the new 5QDLDG6k5iKc8rFH5pB6bsifEQZtwYjoDrojZX3yW1Lq token:
+    //  
+    //Let's mint some. 
+    //First create an account to hold a balance of the new 5QDLDG6k5iKc8rFH5pB6bsifEQZtwYjoDrojZX3yW1Lq token:
     const tokenAccount = await getOrCreateAssociatedTokenAccount(
       connection,
       keypair,
@@ -39,6 +41,7 @@ const mint = new PublicKey("5QDLDG6k5iKc8rFH5pB6bsifEQZtwYjoDrojZX3yW1Lq");
       tokenAccount.address,
       keypair.publicKey,
       100000000 //// because decimals for the mint are set to 6
+      // minting 100
     );
     console.log(`Your mint txid: ${mintTx}`);
   } catch (error) {
